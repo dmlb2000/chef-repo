@@ -1,0 +1,23 @@
+DEPENDENCIES
+  dmlb2000_chef
+    git: git://github.com/dmlb2000/dmlb2000_chefbits.git
+    revision: a8d5f8a27dfd1122422b3a61f746f16a8fe37008
+
+GRAPH
+  chef-client (4.3.1)
+    cron (>= 1.2.0)
+    logrotate (>= 1.2.0)
+    windows (~> 1.37)
+  chef-dk (3.1.0)
+    dmg (~> 2.2)
+  chef_handler (1.2.0)
+  cron (1.6.1)
+  dmg (2.2.2)
+  dmlb2000_chef (0.1.0)
+    chef-client (>= 0.0.0)
+    chef-dk (>= 0.0.0)
+    omnibus_updater (>= 0.0.0)
+  logrotate (1.9.2)
+  omnibus_updater (1.0.4)
+  windows (1.38.2)
+    chef_handler (>= 0.0.0)
