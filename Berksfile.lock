@@ -1,10 +1,13 @@
 DEPENDENCIES
   dmlb2000_chef
     git: git://github.com/dmlb2000/dmlb2000_chefbits.git
-    revision: a253b0a40cc2ca1eb07b6c70b57f8ffbc3ba3147
+    revision: b30614db5202ae53e89075b54649439b5fbe9703
   dmlb2000_distro
     git: git://github.com/dmlb2000/dmlb2000_distro.git
     revision: 05456a21704b99cf43ba9c88d753eaa991318c10
+  dmlb2000_pipeline
+    git: git://github.com/dmlb2000/dmlb2000_pipeline.git
+    revision: 3b30842ce3cdbd221eaf6ae3d76ddf1558da62d7
 
 GRAPH
   build-essential (2.2.4)
@@ -17,21 +20,30 @@ GRAPH
   chef_handler (1.2.0)
   cron (1.7.0)
   dmg (2.2.2)
-  dmlb2000_chef (0.3.0)
+  dmlb2000_chef (0.3.2)
     build-essential (>= 0.0.0)
     chef-client (>= 0.0.0)
     chef-dk (>= 0.0.0)
     omnibus_updater (>= 0.0.0)
-    vagrant (>= 0.0.0)
+    vagrant (= 0.3.0)
   dmlb2000_distro (0.1.0)
     yum-centos (>= 0.0.0)
+  dmlb2000_pipeline (0.1.1)
+    git (>= 0.0.0)
+  git (4.3.4)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   logrotate (1.9.2)
   omnibus_updater (1.0.4)
-  vagrant (0.3.1)
+  vagrant (0.3.0)
     dmg (>= 2.2.2)
     windows (>= 1.30.2)
   windows (1.38.2)
     chef_handler (>= 0.0.0)
   yum (3.7.1)
   yum-centos (0.4.7)
+    yum (~> 3.2)
+  yum-epel (0.6.3)
     yum (~> 3.2)

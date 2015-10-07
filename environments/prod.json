@@ -1,6 +1,6 @@
 {
   "name": "prod",
-  "description": "production home environment",
+  "description": "Production Home Environment",
   "cookbook_versions": {
 
   },
