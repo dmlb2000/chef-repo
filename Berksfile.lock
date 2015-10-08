@@ -1,7 +1,7 @@
 DEPENDENCIES
   dmlb2000_chef
     git: git://github.com/dmlb2000/dmlb2000_chefbits.git
-    revision: 119b6b0facb56fc09a9a2a84f6822d8b52f0ba32
+    revision: d3aa09f031e0601910b60d0a23caf6875648c170
   dmlb2000_distro
     git: git://github.com/dmlb2000/dmlb2000_distro.git
     revision: aafd1e4c42f14906df9377d59dc24d06fb7a96c1
@@ -23,7 +23,7 @@ GRAPH
   chef_handler (1.2.0)
   cron (1.7.0)
   dmg (2.2.2)
-  dmlb2000_chef (0.3.2)
+  dmlb2000_chef (0.3.5)
     build-essential (>= 0.0.0)
     chef-client (>= 0.0.0)
     chef-dk (>= 0.0.0)
