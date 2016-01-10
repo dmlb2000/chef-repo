@@ -1,0 +1,3 @@
+[submodule "cookbooks/dmlb2000_pipeline"]
+	path = cookbooks/dmlb2000_pipeline
+	url = git@github.com:dmlb2000/dmlb2000_pipeline.git
