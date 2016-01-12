@@ -4,3 +4,6 @@
 [submodule "cookbooks/dmlb2000_chef"]
 	path = cookbooks/dmlb2000_chef
 	url = git@github.com:dmlb2000/dmlb2000_chef.git
+[submodule "cookbooks/dmlb2000_distro"]
+	path = cookbooks/dmlb2000_distro
+	url = git@github.com:dmlb2000/dmlb2000_distro.git
