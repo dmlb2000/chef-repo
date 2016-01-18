@@ -1,13 +1,19 @@
 DEPENDENCIES
   dmlb2000_chef
     git: git://github.com/dmlb2000/dmlb2000_chef.git
-    revision: 55cf457ebed507ca4387b4677992c86007ab746f
+    revision: 0021b1139cd9bd05bff01eedf9278fb0cf18082c
   dmlb2000_distro
     git: git://github.com/dmlb2000/dmlb2000_distro.git
-    revision: aafd1e4c42f14906df9377d59dc24d06fb7a96c1
+    revision: fb2530bcd314e163a7aaf803b2b3ba463d506eef
   dmlb2000_pipeline
     git: git://github.com/dmlb2000/dmlb2000_pipeline.git
-    revision: 3866f8f917344a77fbe430f744e1ff0e50a84129
+    revision: b4b1c590f4a01b3270bb3592316fe1112930860f
+  dmlb2000_server
+    git: git://github.com/dmlb2000/dmlb2000_server.git
+    revision: 00e4309be9ef949415bc14f9940c7af118480bf3
+  dmlb2000_users
+    git: git://github.com/dmlb2000/dmlb2000_users.git
+    revision: 75c505344fbec1df4eae7a9a597c5ad7e6fffed0
 
 GRAPH
   apt (2.9.2)
@@ -23,22 +29,30 @@ GRAPH
   chef_handler (1.2.0)
   cron (1.7.3)
   dmg (2.3.0)
-  dmlb2000_chef (0.3.12)
+  dmlb2000_chef (0.3.17)
     build-essential (>= 0.0.0)
     chef-client (>= 0.0.0)
     chef-dk (>= 0.0.0)
+    dmlb2000_users (>= 0.0.0)
     omnibus_updater (>= 0.0.0)
     vagrant (>= 0.0.0)
-  dmlb2000_distro (0.1.1)
+  dmlb2000_distro (0.1.5)
     auto-update (>= 0.0.0)
     yum-centos (>= 0.0.0)
-  dmlb2000_pipeline (0.1.16)
+    yum-epel (>= 0.0.0)
+  dmlb2000_pipeline (0.1.21)
     dmlb2000_chef (>= 0.0.0)
     git (>= 0.0.0)
     python (>= 0.0.0)
     systemd (>= 0.0.0)
     yum-centos (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  dmlb2000_server (0.1.0)
+    dmlb2000_users (>= 0.0.0)
+    samba (>= 0.0.0)
+    zfs_linux (>= 0.0.0)
+  dmlb2000_users (0.1.0)
+    user (>= 0.0.0)
   git (4.3.5)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
@@ -49,14 +63,20 @@ GRAPH
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  samba (0.12.0)
   systemd (1.1.2)
+  user (0.4.2)
   vagrant (0.4.2)
     dmg (>= 2.2.2)
     windows (~> 1.38)
-  windows (1.39.0)
+  windows (1.39.1)
     chef_handler (>= 0.0.0)
-  yum (3.8.2)
+  yum (3.9.0)
   yum-centos (0.4.11)
     yum (~> 3.2)
   yum-epel (0.6.5)
     yum (~> 3.2)
+  zfs_linux (2.1.3)
+    apt (>= 0.0.0)
+    cron (>= 0.0.0)
+    yum-epel (>= 0.0.0)
