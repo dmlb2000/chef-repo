@@ -7,3 +7,9 @@
 [submodule "cookbooks/dmlb2000_distro"]
 	path = cookbooks/dmlb2000_distro
 	url = git@github.com:dmlb2000/dmlb2000_distro.git
+[submodule "cookbooks/dmlb2000_server"]
+	path = cookbooks/dmlb2000_server
+	url = git@github.com:dmlb2000/dmlb2000_server.git
+[submodule "cookbooks/dmlb2000_users"]
+	path = cookbooks/dmlb2000_users
+	url = git@github.com:dmlb2000/dmlb2000_users.git
