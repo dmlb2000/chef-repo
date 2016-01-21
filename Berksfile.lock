@@ -1,19 +1,19 @@
 DEPENDENCIES
   dmlb2000_chef
     git: git://github.com/dmlb2000/dmlb2000_chef.git
-    revision: 0021b1139cd9bd05bff01eedf9278fb0cf18082c
+    revision: 5aa099d9b25f17b9e90efd94b77aa653b1b535ca
   dmlb2000_distro
     git: git://github.com/dmlb2000/dmlb2000_distro.git
     revision: fb2530bcd314e163a7aaf803b2b3ba463d506eef
   dmlb2000_pipeline
     git: git://github.com/dmlb2000/dmlb2000_pipeline.git
-    revision: b4b1c590f4a01b3270bb3592316fe1112930860f
+    revision: 7a6ccaa94918109ba5ef66f1b0b819ca29fc760d
   dmlb2000_server
     git: git://github.com/dmlb2000/dmlb2000_server.git
-    revision: 00e4309be9ef949415bc14f9940c7af118480bf3
+    revision: 449b6025681a62713443372ab8b91e5333a7c977
   dmlb2000_users
     git: git://github.com/dmlb2000/dmlb2000_users.git
-    revision: 75c505344fbec1df4eae7a9a597c5ad7e6fffed0
+    revision: f3ae805984438e0a0c1a3875d8da54977451a02e
 
 GRAPH
   apt (2.9.2)
@@ -29,7 +29,7 @@ GRAPH
   chef_handler (1.2.0)
   cron (1.7.3)
   dmg (2.3.0)
-  dmlb2000_chef (0.3.17)
+  dmlb2000_chef (0.3.18)
     build-essential (>= 0.0.0)
     chef-client (>= 0.0.0)
     chef-dk (>= 0.0.0)
@@ -40,18 +40,18 @@ GRAPH
     auto-update (>= 0.0.0)
     yum-centos (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  dmlb2000_pipeline (0.1.21)
+  dmlb2000_pipeline (0.1.23)
     dmlb2000_chef (>= 0.0.0)
     git (>= 0.0.0)
     python (>= 0.0.0)
     systemd (>= 0.0.0)
     yum-centos (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  dmlb2000_server (0.1.0)
+  dmlb2000_server (0.1.2)
     dmlb2000_users (>= 0.0.0)
     samba (>= 0.0.0)
     zfs_linux (>= 0.0.0)
-  dmlb2000_users (0.1.0)
+  dmlb2000_users (0.1.1)
     user (>= 0.0.0)
   git (4.3.5)
     build-essential (>= 0.0.0)

@@ -1,6 +1,18 @@
 {
   "id": "shares",
   "shares": {
+    "homes": {
+      "comment": "Homes Share",
+      "guest ok": "no",
+      "printable": "no"
+    },
+    "media": {
+      "comment": "Media Share",
+      "path": "/srv/media",
+      "guest ok": "yes",
+      "printable": "no",
+      "write list": ["dmlb2000", "browne"]
+    },
     "backups": {
       "comment": "Backups Share",
       "path": "/srv/backups",
