@@ -1,13 +1,16 @@
 DEPENDENCIES
   dmlb2000_chef
     git: git://github.com/dmlb2000/dmlb2000_chef.git
-    revision: 5aa099d9b25f17b9e90efd94b77aa653b1b535ca
+    revision: a57b4bedf03bce0d464389ab262af283d3d5d92f
+  dmlb2000_chefdk
+    git: git://github.com/dmlb2000/dmlb2000_chefdk.git
+    revision: 397b7afcba962bfac3abbab7039fddcced2bea7c
   dmlb2000_distro
     git: git://github.com/dmlb2000/dmlb2000_distro.git
     revision: fb2530bcd314e163a7aaf803b2b3ba463d506eef
   dmlb2000_pipeline
     git: git://github.com/dmlb2000/dmlb2000_pipeline.git
-    revision: 2a219eb40f4312765d416ca1737dfdb12c41d08e
+    revision: 867be8092ca9dbaab846149b3f87de43ede6032a
   dmlb2000_server
     git: git://github.com/dmlb2000/dmlb2000_server.git
     revision: 449b6025681a62713443372ab8b91e5333a7c977
@@ -16,31 +19,35 @@ DEPENDENCIES
     revision: f3ae805984438e0a0c1a3875d8da54977451a02e
 
 GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
   apt (2.9.2)
   auto-update (0.3.0)
     apt (>= 2.4.0)
-  build-essential (2.2.4)
-  chef-client (4.3.2)
+  build-essential (2.3.1)
+    7-zip (>= 0.0.0)
+  chef-client (4.3.3)
     cron (>= 1.2.0)
     logrotate (>= 1.2.0)
-    windows (~> 1.37)
+    windows (>= 1.39.0)
   chef-dk (3.1.0)
     dmg (~> 2.2)
-  chef_handler (1.2.0)
-  cron (1.7.3)
+  chef_handler (1.3.0)
+  cron (1.7.4)
   dmg (2.3.0)
-  dmlb2000_chef (0.3.18)
-    build-essential (>= 0.0.0)
+  dmlb2000_chef (1.0.0)
     chef-client (>= 0.0.0)
+    omnibus_updater (>= 0.0.0)
+  dmlb2000_chefdk (0.1.1)
+    build-essential (>= 0.0.0)
     chef-dk (>= 0.0.0)
     dmlb2000_users (>= 0.0.0)
-    omnibus_updater (>= 0.0.0)
     vagrant (>= 0.0.0)
   dmlb2000_distro (0.1.5)
     auto-update (>= 0.0.0)
     yum-centos (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  dmlb2000_pipeline (0.1.24)
+  dmlb2000_pipeline (0.1.25)
     build-essential (>= 0.0.0)
     dmlb2000_chef (>= 0.0.0)
     git (>= 0.0.0)
@@ -67,7 +74,7 @@ GRAPH
   samba (0.12.0)
   systemd (1.1.2)
   user (0.4.2)
-  vagrant (0.4.2)
+  vagrant (0.5.0)
     dmg (>= 2.2.2)
     windows (~> 1.38)
   windows (1.39.1)

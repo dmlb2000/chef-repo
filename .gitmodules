@@ -16,3 +16,6 @@
 [submodule "cookbooks/dmlb2000_chefdk"]
 	path = cookbooks/dmlb2000_chefdk
 	url = git@github.com:dmlb2000/dmlb2000_chefdk.git
+[submodule "cookbooks/dmlb2000_desktop"]
+	path = cookbooks/dmlb2000_desktop
+	url = git@github.com:dmlb2000/dmlb2000_desktop.git
