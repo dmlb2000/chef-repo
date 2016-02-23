@@ -13,3 +13,6 @@
 [submodule "cookbooks/dmlb2000_users"]
 	path = cookbooks/dmlb2000_users
 	url = git@github.com:dmlb2000/dmlb2000_users.git
+[submodule "cookbooks/dmlb2000_chefdk"]
+	path = cookbooks/dmlb2000_chefdk
+	url = git@github.com:dmlb2000/dmlb2000_chefdk.git

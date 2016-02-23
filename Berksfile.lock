@@ -7,7 +7,7 @@ DEPENDENCIES
     revision: fb2530bcd314e163a7aaf803b2b3ba463d506eef
   dmlb2000_pipeline
     git: git://github.com/dmlb2000/dmlb2000_pipeline.git
-    revision: 7a6ccaa94918109ba5ef66f1b0b819ca29fc760d
+    revision: 2a219eb40f4312765d416ca1737dfdb12c41d08e
   dmlb2000_server
     git: git://github.com/dmlb2000/dmlb2000_server.git
     revision: 449b6025681a62713443372ab8b91e5333a7c977
@@ -40,7 +40,8 @@ GRAPH
     auto-update (>= 0.0.0)
     yum-centos (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  dmlb2000_pipeline (0.1.23)
+  dmlb2000_pipeline (0.1.24)
+    build-essential (>= 0.0.0)
     dmlb2000_chef (>= 0.0.0)
     git (>= 0.0.0)
     python (>= 0.0.0)
@@ -53,13 +54,13 @@ GRAPH
     zfs_linux (>= 0.0.0)
   dmlb2000_users (0.1.1)
     user (>= 0.0.0)
-  git (4.3.5)
+  git (4.3.7)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
   logrotate (1.9.2)
-  omnibus_updater (1.0.4)
+  omnibus_updater (1.0.6)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
@@ -71,7 +72,7 @@ GRAPH
     windows (~> 1.38)
   windows (1.39.1)
     chef_handler (>= 0.0.0)
-  yum (3.9.0)
+  yum (3.10.0)
   yum-centos (0.4.11)
     yum (~> 3.2)
   yum-epel (0.6.5)
