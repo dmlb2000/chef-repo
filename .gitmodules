@@ -19,3 +19,6 @@
 [submodule "cookbooks/dmlb2000_desktop"]
 	path = cookbooks/dmlb2000_desktop
 	url = git@github.com:dmlb2000/dmlb2000_desktop.git
+[submodule "cookbooks/dmlb2000_docker"]
+	path = cookbooks/dmlb2000_docker
+	url = git@github.com:dmlb2000/dmlb2000_docker.git
