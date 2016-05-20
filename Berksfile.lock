@@ -4,13 +4,19 @@ DEPENDENCIES
     revision: a57b4bedf03bce0d464389ab262af283d3d5d92f
   dmlb2000_chefdk
     git: git://github.com/dmlb2000/dmlb2000_chefdk.git
-    revision: 397b7afcba962bfac3abbab7039fddcced2bea7c
+    revision: 3633bf16ca7619fbb3027fa7e13de64c5aae29e4
+  dmlb2000_desktop
+    git: git://github.com/dmlb2000/dmlb2000_desktop.git
+    revision: 111e4ed58af41fb8cc99a83fa5c4aedb3da011da
   dmlb2000_distro
     git: git://github.com/dmlb2000/dmlb2000_distro.git
     revision: fb2530bcd314e163a7aaf803b2b3ba463d506eef
+  dmlb2000_docker
+    git: git://github.com/dmlb2000/dmlb2000_docker.git
+    revision: aeb55ca4d465230029b719db6ded62049bbd4644
   dmlb2000_pipeline
     git: git://github.com/dmlb2000/dmlb2000_pipeline.git
-    revision: 867be8092ca9dbaab846149b3f87de43ede6032a
+    revision: 93147ecdfdce224f5b98be84a4bd40c87d9e433a
   dmlb2000_server
     git: git://github.com/dmlb2000/dmlb2000_server.git
     revision: 449b6025681a62713443372ab8b91e5333a7c977
@@ -19,13 +25,12 @@ DEPENDENCIES
     revision: f3ae805984438e0a0c1a3875d8da54977451a02e
 
 GRAPH
-  7-zip (1.0.2)
-    windows (>= 1.2.2)
-  apt (2.9.2)
+  apache2 (3.2.0)
+  apt (3.0.0)
   auto-update (0.3.0)
     apt (>= 2.4.0)
-  build-essential (2.3.1)
-    7-zip (>= 0.0.0)
+  build-essential (3.2.0)
+    seven_zip (>= 0.0.0)
   chef-client (4.3.3)
     cron (>= 1.2.0)
     logrotate (>= 1.2.0)
@@ -33,7 +38,8 @@ GRAPH
   chef-dk (3.1.0)
     dmg (~> 2.2)
   chef_handler (1.3.0)
-  cron (1.7.4)
+  compat_resource (12.9.1)
+  cron (1.7.6)
   dmg (2.3.0)
   dmlb2000_chef (1.0.0)
     chef-client (>= 0.0.0)
@@ -43,11 +49,23 @@ GRAPH
     chef-dk (>= 0.0.0)
     dmlb2000_users (>= 0.0.0)
     vagrant (>= 0.0.0)
+  dmlb2000_desktop (0.1.3)
+    dmlb2000_chef (>= 0.0.0)
+    dmlb2000_chefdk (>= 0.0.0)
+    dmlb2000_distro (>= 0.0.0)
+    dmlb2000_docker (>= 0.0.0)
+    dmlb2000_pipeline (>= 0.0.0)
+    dmlb2000_users (>= 0.0.0)
   dmlb2000_distro (0.1.5)
     auto-update (>= 0.0.0)
     yum-centos (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  dmlb2000_pipeline (0.1.25)
+  dmlb2000_docker (0.3.1)
+    apache2 (>= 0.0.0)
+    docker (>= 0.0.0)
+    lvm (>= 0.0.0)
+    x509 (>= 0.0.0)
+  dmlb2000_pipeline (0.1.27)
     build-essential (>= 0.0.0)
     dmlb2000_chef (>= 0.0.0)
     git (>= 0.0.0)
@@ -61,29 +79,37 @@ GRAPH
     zfs_linux (>= 0.0.0)
   dmlb2000_users (0.1.1)
     user (>= 0.0.0)
-  git (4.3.7)
+  docker (2.6.2)
+    compat_resource (>= 12.9.0)
+  git (4.4.1)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
   logrotate (1.9.2)
-  omnibus_updater (1.0.6)
+  lvm (1.6.1)
+  omnibus_updater (1.1.0)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
   samba (0.12.0)
-  systemd (1.1.2)
+  seven_zip (2.0.0)
+    windows (>= 1.2.2)
+  systemd (2.0.0)
   user (0.4.2)
   vagrant (0.5.0)
     dmg (>= 2.2.2)
     windows (~> 1.38)
-  windows (1.39.1)
+  vt-gpg (1.0.0)
+  windows (1.39.2)
     chef_handler (>= 0.0.0)
+  x509 (1.1.0)
+    vt-gpg (>= 0.0.0)
   yum (3.10.0)
-  yum-centos (0.4.11)
-    yum (~> 3.2)
-  yum-epel (0.6.5)
-    yum (~> 3.2)
+  yum-centos (0.4.12)
+    yum (~> 3.10.0)
+  yum-epel (0.6.6)
+    yum (~> 3.10.0)
   zfs_linux (2.1.3)
     apt (>= 0.0.0)
     cron (>= 0.0.0)

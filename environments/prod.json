@@ -7,7 +7,9 @@
   "json_class": "Chef::Environment",
   "chef_type": "environment",
   "default_attributes": {
-
+    "dmlb2000_docker": {
+      "tls_verify": true
+    }
   },
   "override_attributes": {
 
