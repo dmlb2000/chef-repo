@@ -8,7 +8,10 @@
   "chef_type": "environment",
   "default_attributes": {
     "dmlb2000_docker": {
-      "tls_verify": true
+      "tls_verify": false
+    },
+    "yum-centos": {
+      "repos": ["base", "updates", "extras", "centosplus", "fasttrack", "cr"]
     }
   },
   "override_attributes": {
